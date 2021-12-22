@@ -1,0 +1,23 @@
+{
+	"name": "AzureMySqlTable2Carloca",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureMySql1raquel",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureMySqlTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": {
+				"value": "@dataset().tableName\n",
+				"type": "Expression"
+			}
+		}
+	}
+}
